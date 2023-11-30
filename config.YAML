@@ -1,0 +1,21 @@
+locationFile: './data/LocationsOct11.csv'
+edgeFile: './data/EdgesOct11.csv'
+prefFile: './data/pref1.csv'
+startLoc: 'ChicagoIL'
+resultFile: './output/RoundTripTest3.csv'
+maxTime: 30
+x_mph: 60
+
+
+attractionFile: "./data/attractions.tsv"
+themeFile: "./data/themes.tsv"
+maxSamples: 20
+
+
+path_to_data: './data/data.txt'
+path_to_output: './output/output1.csv'
+hidden_layers: [4, 4]
+num_folds: 5
+num_trials: 5
+epochs: 200
+lr: 0.05
