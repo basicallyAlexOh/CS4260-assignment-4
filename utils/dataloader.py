@@ -42,6 +42,9 @@ class Dataloader:
         self.edgeList = []
         self.speed = speed
 
+        # Format: Maps location -> (Attraction Name, Themes)
+        self.locationDict = defaultdict(list)
+
         random.seed(0)
         self.generatePreferences(config)
         self.__readCSV()
@@ -61,10 +64,11 @@ class Dataloader:
                     if row[0] in self.scores:
                         pref = self.scores[row[0]]
                     else:
-                        pref = 0
-                    print(row[0] + ": " + str(pref))
-                    self.nodeList.append(Node(row[0], lat, lon, pref))
-                    self.nodeDict.update({row[0]: Node(row[0], lat, lon, pref)})
+                        # Assign random score from 0-0.1
+                        pref = random.random() * 0.1
+                    # print(row[0] + ": " + str(pref))
+                    self.nodeList.append(Node(row[0], lat, lon, pref, self.locationDict[row[0]]))
+                    self.nodeDict.update({row[0]: Node(row[0], lat, lon, pref, self.locationDict[row[0]])})
                 except:
                     print("Not a valid location: " + row[0])
 
@@ -77,9 +81,9 @@ class Dataloader:
                         pref = self.scores[row[0]] * 0.1
                     #     Edge weights will be multiplied by 0.1
                     else:
-                        pref = 0
-                    print(row[0] + ": " + str(pref))
-                    self.edgeList.append(Edge(row[0], self.nodeDict[row[1]], self.nodeDict[row[2]], dist, float(pref), self.speed))
+                        pref = random.random()*0.02
+                    # print(row[0] + ": " + str(pref))
+                    self.edgeList.append(Edge(row[0], self.nodeDict[row[1]], self.nodeDict[row[2]], dist, float(pref), self.locationDict[row[0]], self.speed))
                 except:
                     print("One or more locations are invalid: " + row[1] + " " + row[2])
 
@@ -99,14 +103,13 @@ class Dataloader:
                 attractionList.append((row[0], row[1], themes))
             except:
                 print("Failed on:" + str(row))
-                print(len(row))
+                # print(len(row))
 
-        locationDict = defaultdict(list)
         locationList = []
         for item in attractionList:
             if item[1] not in locationList:
                 locationList.append(item[1])
-            locationDict[item[1]].append((item[0], item[2]))
+            self.locationDict[item[1]].append((item[0], item[2]))
 
 
         random.shuffle(locationList)
@@ -115,7 +118,7 @@ class Dataloader:
 
         for loc in locationList:
             themeCount = [0] * self.numThemes
-            for attraction in locationDict[loc]:
+            for attraction in self.locationDict[loc]:
                 themes = attraction[1]
                 for theme in themes:
                     if theme in self.themes:

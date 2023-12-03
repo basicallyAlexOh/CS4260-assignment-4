@@ -182,10 +182,15 @@ class UtilityDrivenSolver(Solver):
                  maxTime: float, x_mph: float):
         super().__init__(locFilePath, edgeFilePath, prefFilePath, startLoc, goal, resultFilePath, x_mph)
         self.maxTime = maxTime
+        self.themes = list(csv.reader(open(prefFilePath, 'r'), delimiter='\t'))[0][1:]
 
     def pathSummary(self, p: Path, output=sys.stdout):
-        super().pathSummary(p, output)
-        print(str(self.start) + " " + str(p.pref) + " " + str(p.weight) + " " + str(p.time), file=output)
+        print("Solution #%d : %s" % (self.solNumber, str(p.path[0])), file=output)
+        self.solNumber += 1
+        for edge in p.edges:
+            print(str(edge), file=output)
+        print("Total Time of Trip: " + str(p.time) + "\t Total Preference of Trip: " + str(p.pref), file=output)
+
 
     def printSummary(self, output=sys.stdout):
         print("Size of Frontier: " + str(self.frontier.qsize()), file=output)
@@ -233,8 +238,7 @@ class UtilityDrivenSolver(Solver):
         adj = self.graph.getAdjList()
 
         self.timer.start()
-
-        self.frontier.put(Path(self.start))
+        self.frontier.put(Path(self.start, self.themes))
         while not self.frontier.empty():
             curPath = self.frontier.get()
             curNode = curPath.getLastNode()

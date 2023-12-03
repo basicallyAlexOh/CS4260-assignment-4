@@ -12,11 +12,13 @@ class Path:
     # __init__
     # Constructor: creates a path with a single starting node
     # Param: startNode (Node)
-    def __init__(self, startNode: Node):
+    def __init__(self, startNode: Node, themes: list[str] = []):
         self.path = [startNode]
         self.edges = []
         self.weight = 0
         self.pref = startNode.pref
+        self.themes = themes
+        self.themeCount = [0] * len(themes)
 
         # Total time of trip so far
         self.time = startNode.time_at_location()
@@ -75,19 +77,35 @@ class Path:
     # Adds an edge to the path and updates the list of nodes and list of edges.
     # Params: e (Edge)
     def addEdge(self, e: Edge):
+
         self.weight += e.weight
         self.time += e.weight/e.speed
 
+        newEdgePref = e.pref
         if e not in self.edges:
-            self.pref += e.pref
+            factor = self.calculate_multiplier(e)
+            newEdgePref *= factor
+            self.pref += newEdgePref
             self.time += e.time_on_edge()
-        if e.end not in self.path:
+        else:
+            newEdgePref = 0
+
+        newNodePref = e.end.pref
+        if e.end not in self.path or e.end == self.path[0]:
+            factor = self.calculate_multiplier(e.end)
+            newNodePref *= factor
+            self.pref += e.end.pref * factor
             self.time += e.end.time_at_location()
-            self.pref += e.end.pref
+        else:
+            newNodePref = 0
 
+        newNode = Node(e.end.id, e.end.longitude, e.end.latitude, newNodePref, e.end.attractions)
+        newEdge = Edge(e.label, e.start, newNode, e.weight, newEdgePref, e.attractions, e.speed)
 
-        self.path.append(e.end)
-        self.edges.append(e)
+        self.track_themes(e)
+        self.track_themes(e.end)
+        self.path.append(newNode)
+        self.edges.append(newEdge)
 
 
     # time_estimate (Public)
@@ -95,3 +113,21 @@ class Path:
     # Returns; float
     def time_estimate(self):
         return self.time
+
+
+    def track_themes(self, loc):
+        for attraction in loc.attractions:
+            listOfThemes = attraction[1]
+            for theme in listOfThemes:
+                if theme in self.themes:
+                    self.themeCount[self.themes.index(theme)] += 1
+
+    def calculate_multiplier(self, loc):
+        multiplier = 1
+        for attraction in loc.attractions:
+            listOfThemes = attraction[1]
+            for theme in listOfThemes:
+                if theme in self.themes:
+                    # Penalize for
+                    multiplier *= (0.9)**(self.themeCount[self.themes.index(theme)])
+        return multiplier

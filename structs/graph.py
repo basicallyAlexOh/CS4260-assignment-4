@@ -33,9 +33,9 @@ class Graph:
     def __buildGraph(self, dataloader: Dataloader):
         self.__nodes = dataloader.nodeList
         for e in dataloader.edgeList:
-            label, u,v,w, pref, speed = e.label, e.start, e.end, e.weight, e.pref, e.speed
-            self.__adj[u].append(Edge(label,u,v,w,pref, speed))
-            self.__adj[v].append(Edge(label,v,u,w,pref, speed))
+            label, u,v,w, pref, attractions, speed = e.label, e.start, e.end, e.weight, e.pref, e.attractions, e.speed
+            self.__adj[u].append(Edge(label,u,v,w,pref, attractions, speed))
+            self.__adj[v].append(Edge(label,v,u,w,pref, attractions, speed))
 
 
     # setGoal (Private)

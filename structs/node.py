@@ -8,12 +8,13 @@ class Node:
     # __init__
     # Constructor: creates a node
     # Params: name (str), long (float), lat (float)
-    def __init__(self, name: str, long: float, lat: float, pref: float):
+    def __init__(self, name: str, long: float, lat: float, pref: float, attractions: list):
         self.id = name
         self.longitude = long
         self.latitude = lat
         self.h = 0
         self.pref = pref
+        self.attractions = attractions
 
 
 

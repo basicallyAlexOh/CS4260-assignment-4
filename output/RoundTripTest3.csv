@@ -1,90 +1,121 @@
-Size of Frontier: 154
-Min Pref: 2.69770118419534
-Average Pref: 2.69770118419534
-Max Pref: 2.69770118419534
-Solution ID of Max Pref: 0
-Visited Nodes: LouisvilleKY BowlingGreenKY IndianapolisIN TerreHauteIN ChicagoIL CincinnatiOH ColumbusOH ClevelandOH LexingtonKY RochesterNY BuffaloNY GrandRapidsMI LansingMI EriePA HuntingtonWV FairmontWV PittsburghPA FortWayneIN DetroitMI AnnArborMI ToledoOH 
-Total Runtime: 0:00:00.169613
+Size of Frontier: 44
+Min Pref: 2.173241217196847
+Average Pref: 2.2000301079457674
+Max Pref: 2.2410100766960923
+Solution ID of Max Pref: 1
+Visited Nodes: NashvilleTN MemphisTN JacksonTN BowlingGreenKY WatertownTN GatlinburgTN AthensTN LexingtonTN SpartaTN AlbanyKY CookevilleTN BirminghamAL EvansvilleIN AthensAL GadsenAL MetropolisIL FortCampbellKY MurfreesboroTN ClarksvilleTN TuscaloosaAL WarriorAL AtlantaGA HuntsvilleAL KingsportTN LivingstonTN KnoxvilleTN ChattanoogaTN McMinnvilleTN HendersonvilleTN CampbellsvilleKY SomersetKY GlasgowKY ElizabethtownKY TannerAL DecaturAL ElkmontAL KennesawGA MariettaGA DuluthGA OakRidgeTN FayettevilleTN 
+Total Runtime: 0:00:01.352332
 
-Solution #0 : ChicagoIL 0
-ChicagoIL IndianapolisIN Chicago_tofrom_Indianapolis 0.0 3.05 0 0 183.0 101.89588285059406
-IndianapolisIN FortWayneIN IndianapolisIN_tofrom_FortWayneIN 0.0 2.0833333333333335 0.5391160933531689 0.5391160933531689 308.0 171.9743286205966
-FortWayneIN DetroitMI FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 470.0 316.60772867807725
-DetroitMI ClevelandOH DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 640.0 409.5880192431775
-ClevelandOH EriePA ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0 0 743.0 520.9234978340604
-EriePA BuffaloNY EriePA_tofrom_BuffaloNY 0.0 1.615 0.5391160933531689 0.5391160933531689 839.9 604.2697476403504
-BuffaloNY EriePA EriePA_tofrom_BuffaloNY 0.0 1.615 0 0 936.8 520.9234978340604
-EriePA ClevelandOH ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0.5391160933531689 0.5391160933531689 1039.8 409.5880192431775
-ClevelandOH ToledoOH ToledoOH_tofrom_ClevelandOH 0.0 1.9 0 0 1153.8 283.039046713205
-ToledoOH ChicagoIL ChicagoIL_tofrom_ToledoOH 0.0 2.683333333333333 0.5412368107826645 0.5412368107826645 1314.8 0.0
-ChicagoIL 2.69770118419534 1314.8 24.61103451752867
-0:00:00.008685
+Solution #0 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.5397583686274935  Time at Destination: 0.5397583686274935
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
 
-Solution #1 : ChicagoIL 0
-ChicagoIL IndianapolisIN Chicago_tofrom_Indianapolis 0.0 3.05 0 0 183.0 101.89588285059406
-IndianapolisIN FortWayneIN IndianapolisIN_tofrom_FortWayneIN 0.0 2.0833333333333335 0.5391160933531689 0.5391160933531689 308.0 171.9743286205966
-FortWayneIN DetroitMI FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 470.0 316.60772867807725
-DetroitMI ClevelandOH DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 640.0 409.5880192431775
-ClevelandOH EriePA ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0 0 743.0 520.9234978340604
-EriePA BuffaloNY EriePA_tofrom_BuffaloNY 0.0 1.615 0.5391160933531689 0.5391160933531689 839.9 604.2697476403504
-BuffaloNY EriePA EriePA_tofrom_BuffaloNY 0.0 1.615 0 0 936.8 520.9234978340604
-EriePA ClevelandOH ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0.5391160933531689 0.5391160933531689 1039.8 409.5880192431775
-ClevelandOH DetroitMI DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 1209.8 316.60772867807725
-DetroitMI AnnArborMI DetroitMI_tofrom_AnnArborMI 0.0 0.7333333333333333 0 0 1253.8 267.8191414934676
-AnnArborMI LansingMI LansingMI_tofrom_AnnArborMI 0.0 1.0816666666666668 0 0 1318.7 212.28861928675977
-LansingMI GrandRapidsMI GrandRapidsMI_tofrom_LansingMI 0.0 1.1366666666666667 0 0 1386.9 135.50480762288382
-GrandRapidsMI ChicagoIL ChicagoIL_tofrom_GrandRapidsMI 0.0 2.966666666666667 0.5412368107826645 0.5412368107826645 1564.9 0.0
-ChicagoIL 2.69770118419534 1564.9 28.779367850862002
-0:00:00.098175
+ChattanoogaTN to NashvilleTN  Edge Pref: 0.014828541245840527
+ 	 Time on Edge: 2.248161874579174
+ 	 Destination Pref: 0.5398440423087942  Time at Destination: 0.5398440423087942
+	 Attractions on Edge: []
+	 Attractions at Destination: [('CountryMusicHofF', ['MusicHistory', 'History', 'Music']), ('CentennialPark', ['Walking', 'Landmark', 'Environment', 'Nature']), ('VanderbiltUniversity', ['Building', 'University', 'Walking']), ('Frist Museum', ['Art', 'Art Museum', 'Museum', 'History', 'Architecture']), ('GrandOleOpry', ['Music', 'Music History', 'Performing Arts'])]
 
-Solution #2 : ChicagoIL 0
-ChicagoIL IndianapolisIN Chicago_tofrom_Indianapolis 0.0 3.05 0 0 183.0 101.89588285059406
-IndianapolisIN FortWayneIN IndianapolisIN_tofrom_FortWayneIN 0.0 2.0833333333333335 0.5391160933531689 0.5391160933531689 308.0 171.9743286205966
-FortWayneIN DetroitMI FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 470.0 316.60772867807725
-DetroitMI ClevelandOH DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 640.0 409.5880192431775
-ClevelandOH EriePA ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0 0 743.0 520.9234978340604
-EriePA BuffaloNY EriePA_tofrom_BuffaloNY 0.0 1.615 0.5391160933531689 0.5391160933531689 839.9 604.2697476403504
-BuffaloNY EriePA EriePA_tofrom_BuffaloNY 0.0 1.615 0 0 936.8 520.9234978340604
-EriePA ClevelandOH ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0.5391160933531689 0.5391160933531689 1039.8 409.5880192431775
-ClevelandOH DetroitMI DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 1209.8 316.60772867807725
-DetroitMI FortWayneIN FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 1371.8 171.9743286205966
-FortWayneIN ToledoOH FortWayneIN_tofrom_ToledoOH 0.0 1.7 0 0 1473.8 283.039046713205
-ToledoOH ChicagoIL ChicagoIL_tofrom_ToledoOH 0.0 2.683333333333333 0.5412368107826645 0.5412368107826645 1634.8 0.0
-ChicagoIL 2.69770118419534 1634.8 29.944367850862
-0:00:00.128872
+NashvilleTN to DecaturAL  Edge Pref: 0.010461199675074173
+ 	 Time on Edge: 1.3437945330084073
+ 	 Destination Pref: 0.09802446426654712  Time at Destination: 0.09802446426654712
+	 Attractions on Edge: []
+	 Attractions at Destination: []
 
-Solution #3 : ChicagoIL 0
-ChicagoIL IndianapolisIN Chicago_tofrom_Indianapolis 0.0 3.05 0 0 183.0 101.89588285059406
-IndianapolisIN FortWayneIN IndianapolisIN_tofrom_FortWayneIN 0.0 2.0833333333333335 0.5391160933531689 0.5391160933531689 308.0 171.9743286205966
-FortWayneIN DetroitMI FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 470.0 316.60772867807725
-DetroitMI ClevelandOH DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 640.0 409.5880192431775
-ClevelandOH EriePA ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0 0 743.0 520.9234978340604
-EriePA BuffaloNY EriePA_tofrom_BuffaloNY 0.0 1.615 0.5391160933531689 0.5391160933531689 839.9 604.2697476403504
-BuffaloNY EriePA EriePA_tofrom_BuffaloNY 0.0 1.615 0 0 936.8 520.9234978340604
-EriePA ClevelandOH ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0.5391160933531689 0.5391160933531689 1039.8 409.5880192431775
-ClevelandOH DetroitMI DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 1209.8 316.60772867807725
-DetroitMI AnnArborMI DetroitMI_tofrom_AnnArborMI 0.0 0.7333333333333333 0 0 1253.8 267.8191414934676
-AnnArborMI DetroitMI DetroitMI_tofrom_AnnArborMI 0.0 0.7333333333333333 0.5391160933531689 0.5391160933531689 1297.8 316.60772867807725
-DetroitMI ToledoOH DetroitMI_tofrom_ToledoOH 0.0 0.9833333333333333 0 0 1356.8 283.039046713205
-ToledoOH ChicagoIL ChicagoIL_tofrom_ToledoOH 0.0 2.683333333333333 0.5412368107826645 0.5412368107826645 1517.8 0.0
-ChicagoIL 2.69770118419534 1517.8 27.994367850862005
-0:00:00.138898
+DecaturAL to NashvilleTN  Edge Pref: 0
+ 	 Time on Edge: 1.3333333333333333
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('CountryMusicHofF', ['MusicHistory', 'History', 'Music']), ('CentennialPark', ['Walking', 'Landmark', 'Environment', 'Nature']), ('VanderbiltUniversity', ['Building', 'University', 'Walking']), ('Frist Museum', ['Art', 'Art Museum', 'Museum', 'History', 'Architecture']), ('GrandOleOpry', ['Music', 'Music History', 'Performing Arts'])]
 
-Solution #4 : ChicagoIL 0
-ChicagoIL IndianapolisIN Chicago_tofrom_Indianapolis 0.0 3.05 0 0 183.0 101.89588285059406
-IndianapolisIN FortWayneIN IndianapolisIN_tofrom_FortWayneIN 0.0 2.0833333333333335 0.5391160933531689 0.5391160933531689 308.0 171.9743286205966
-FortWayneIN DetroitMI FortWayneIN_tofrom_DetroitMI 0.0 2.7 0.5391160933531689 0.5391160933531689 470.0 316.60772867807725
-DetroitMI ClevelandOH DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 640.0 409.5880192431775
-ClevelandOH EriePA ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0 0 743.0 520.9234978340604
-EriePA BuffaloNY EriePA_tofrom_BuffaloNY 0.0 1.615 0.5391160933531689 0.5391160933531689 839.9 604.2697476403504
-BuffaloNY EriePA EriePA_tofrom_BuffaloNY 0.0 1.615 0 0 936.8 520.9234978340604
-EriePA ClevelandOH ClevelandOH_tofrom_EriePA 0.0 1.7166666666666666 0.5391160933531689 0.5391160933531689 1039.8 409.5880192431775
-ClevelandOH DetroitMI DetroitMI_tofrom_ClevelandOH 0.0 2.8333333333333335 0.5391160933531689 0.5391160933531689 1209.8 316.60772867807725
-DetroitMI AnnArborMI DetroitMI_tofrom_AnnArborMI 0.0 0.7333333333333333 0 0 1253.8 267.8191414934676
-AnnArborMI DetroitMI DetroitMI_tofrom_AnnArborMI 0.0 0.7333333333333333 0.5391160933531689 0.5391160933531689 1297.8 316.60772867807725
-DetroitMI ToledoOH DetroitMI_tofrom_ToledoOH 0.0 0.9833333333333333 0 0 1356.8 283.039046713205
-ToledoOH DetroitMI DetroitMI_tofrom_ToledoOH 0.0 0.9833333333333333 0.5391160933531689 0.5391160933531689 1415.8 316.60772867807725
-DetroitMI ToledoOH DetroitMI_tofrom_ToledoOH 0.0 0.9833333333333333 0 0 1474.8 283.039046713205
-ToledoOH ChicagoIL ChicagoIL_tofrom_ToledoOH 0.0 2.683333333333333 0.5412368107826645 0.5412368107826645 1635.8 0.0
-ChicagoIL 2.69770118419534 1635.8 29.961034517528674
-0:00:00.169613
+NashvilleTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 2.2333333333333334
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.43720392255961205  Time at Destination: 0.43720392255961205
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 18.888393036470692	 Total Preference of Trip: 2.185839029944362
+0:00:00.649498
+
+Solution #1 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.5397583686274935  Time at Destination: 0.5397583686274935
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to NashvilleTN  Edge Pref: 0.014828541245840527
+ 	 Time on Edge: 2.248161874579174
+ 	 Destination Pref: 0.5398440423087942  Time at Destination: 0.5398440423087942
+	 Attractions on Edge: []
+	 Attractions at Destination: [('CountryMusicHofF', ['MusicHistory', 'History', 'Music']), ('CentennialPark', ['Walking', 'Landmark', 'Environment', 'Nature']), ('VanderbiltUniversity', ['Building', 'University', 'Walking']), ('Frist Museum', ['Art', 'Art Museum', 'Museum', 'History', 'Architecture']), ('GrandOleOpry', ['Music', 'Music History', 'Performing Arts'])]
+
+NashvilleTN to McMinnvilleTN  Edge Pref: 0.008434086208301259
+ 	 Time on Edge: 1.2917674195416347
+ 	 Destination Pref: 0.08745376498580455  Time at Destination: 0.08745376498580455
+	 Attractions on Edge: []
+	 Attractions at Destination: []
+
+McMinnvilleTN to ChattanoogaTN  Edge Pref: 0.01919064588151083
+ 	 Time on Edge: 1.2525239792148442
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.4857821361773467  Time at Destination: 0.4857821361773467
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 17.69498586960469	 Total Preference of Trip: 2.2410100766960923
+0:00:00.762327
+
+Solution #2 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.5397583686274935  Time at Destination: 0.5397583686274935
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to NashvilleTN  Edge Pref: 0.014828541245840527
+ 	 Time on Edge: 2.248161874579174
+ 	 Destination Pref: 0.5398440423087942  Time at Destination: 0.5398440423087942
+	 Attractions on Edge: []
+	 Attractions at Destination: [('CountryMusicHofF', ['MusicHistory', 'History', 'Music']), ('CentennialPark', ['Walking', 'Landmark', 'Environment', 'Nature']), ('VanderbiltUniversity', ['Building', 'University', 'Walking']), ('Frist Museum', ['Art', 'Art Museum', 'Museum', 'History', 'Architecture']), ('GrandOleOpry', ['Music', 'Music History', 'Performing Arts'])]
+
+NashvilleTN to McMinnvilleTN  Edge Pref: 0.008434086208301259
+ 	 Time on Edge: 1.2917674195416347
+ 	 Destination Pref: 0.08745376498580455  Time at Destination: 0.08745376498580455
+	 Attractions on Edge: []
+	 Attractions at Destination: []
+
+McMinnvilleTN to NashvilleTN  Edge Pref: 0
+ 	 Time on Edge: 1.2833333333333334
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('CountryMusicHofF', ['MusicHistory', 'History', 'Music']), ('CentennialPark', ['Walking', 'Landmark', 'Environment', 'Nature']), ('VanderbiltUniversity', ['Building', 'University', 'Walking']), ('Frist Museum', ['Art', 'Art Museum', 'Museum', 'History', 'Architecture']), ('GrandOleOpry', ['Music', 'Music History', 'Performing Arts'])]
+
+NashvilleTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 2.2333333333333334
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.43720392255961205  Time at Destination: 0.43720392255961205
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 18.725795223723175	 Total Preference of Trip: 2.173241217196847
+0:00:01.352332

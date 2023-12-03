@@ -1,9 +1,9 @@
 locationFile: './data/LocationsOct11.csv'
 edgeFile: './data/EdgesOct11.csv'
 prefFile: './data/pref1.csv'
-startLoc: 'ChicagoIL'
+startLoc: 'AtlantaGA'
 resultFile: './output/RoundTripTest3.csv'
-maxTime: 30
+maxTime: 20
 x_mph: 60
 
 
