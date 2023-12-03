@@ -44,6 +44,7 @@ def main():
         locationDict[item[1]].append((item[0], item[2]))
 
     print("Listing Themes...")
+    themeList.sort()
     for item in themeList:
         print(item)
 

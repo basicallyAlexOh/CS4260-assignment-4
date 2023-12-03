@@ -1,0 +1,115 @@
+Size of Frontier: 33
+Min Pref: 1.5930936672405769
+Average Pref: 1.764194160670374
+Max Pref: 1.9997507366626532
+Solution ID of Max Pref: 0
+Visited Nodes: NashvilleTN BowlingGreenKY WatertownTN GatlinburgTN AthensTN AshevilleNC BooneNC ColumbiaSC PigeonForgeTN FortCampbellKY MurfreesboroTN AtlantaGA AthensGA KingsportTN KnoxvilleTN ChattanoogaTN McMinnvilleTN HendersonvilleTN AugustaGA CharlotteNC DuluthGA 
+Total Runtime: 0:00:00.097243
+
+Solution #0 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.39503065875395216  Time at Destination: 0.39503065875395216
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to PigeonForgeTN  Edge Pref: 0.005865259076525291
+ 	 Time on Edge: 2.4391985924098583
+ 	 Destination Pref: 0.40275759700910063  Time at Destination: 0.40275759700910063
+	 Attractions on Edge: []
+	 Attractions at Destination: [('Dollywood', ['Parks', 'Kids', 'Rides', ''])]
+
+PigeonForgeTN to AshevilleNC  Edge Pref: 0.0038994724129757376
+ 	 Time on Edge: 1.4705661390796423
+ 	 Destination Pref: 0.40275759700910063  Time at Destination: 0.40275759700910063
+	 Attractions on Edge: []
+	 Attractions at Destination: [('BiltmoreEstate', ['Architecture', 'History', 'Luxury'])]
+
+AshevilleNC to PigeonForgeTN  Edge Pref: 0
+ 	 Time on Edge: 1.4666666666666666
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('Dollywood', ['Parks', 'Kids', 'Rides', ''])]
+
+PigeonForgeTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 2.433333333333333
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.39173979511296925  Time at Destination: 0.39173979511296925
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 19.59975073666265	 Total Preference of Trip: 1.9997507366626532
+0:00:00.026528
+
+Solution #1 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.39503065875395216  Time at Destination: 0.39503065875395216
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to PigeonForgeTN  Edge Pref: 0.005865259076525291
+ 	 Time on Edge: 2.4391985924098583
+ 	 Destination Pref: 0.40275759700910063  Time at Destination: 0.40275759700910063
+	 Attractions on Edge: []
+	 Attractions at Destination: [('Dollywood', ['Parks', 'Kids', 'Rides', ''])]
+
+PigeonForgeTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 2.433333333333333
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.39173979511296925  Time at Destination: 0.39173979511296925
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 14.793093667240576	 Total Preference of Trip: 1.5930936672405769
+0:00:00.048776
+
+Solution #2 : AtlantaGA
+AtlantaGA to ChattanoogaTN  Edge Pref: 0.005960562175060218
+ 	 Time on Edge: 1.9726272288417268
+ 	 Destination Pref: 0.39503065875395216  Time at Destination: 0.39503065875395216
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to PigeonForgeTN  Edge Pref: 0.005865259076525291
+ 	 Time on Edge: 2.4391985924098583
+ 	 Destination Pref: 0.40275759700910063  Time at Destination: 0.40275759700910063
+	 Attractions on Edge: []
+	 Attractions at Destination: [('Dollywood', ['Parks', 'Kids', 'Rides', ''])]
+
+PigeonForgeTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 2.433333333333333
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to McMinnvilleTN  Edge Pref: 0.01919064588151083
+ 	 Time on Edge: 1.2525239792148442
+ 	 Destination Pref: 0.08745376498580455  Time at Destination: 0.08745376498580455
+	 Attractions on Edge: []
+	 Attractions at Destination: []
+
+McMinnvilleTN to ChattanoogaTN  Edge Pref: 0
+ 	 Time on Edge: 1.2333333333333334
+ 	 Destination Pref: 0  Time at Destination: 0
+	 Attractions on Edge: []
+	 Attractions at Destination: [('RubyFalls', ['Hiking', 'Landmark', 'Environment', 'Nature']), ('RockCityGardens', ['Parks', 'Walking', 'Hiking']), ('Chattanooga Zoo', ['Wildlife']), ('Naughty Cat Cafe', ['Pets']), ('Tennessee Aquarium', ['Wildlife'])]
+
+ChattanoogaTN to AtlantaGA  Edge Pref: 0
+ 	 Time on Edge: 1.9666666666666666
+ 	 Destination Pref: 0.39173979511296925  Time at Destination: 0.39173979511296925
+	 Attractions on Edge: []
+	 Attractions at Destination: [('WorldofCocaCola', ['Movies', 'Walking', 'History', 'Museums']), ('WorldofCoca-Cola', ['History', 'Food', 'Industrial']), ('UniversityOfGeorgia', ['University', 'Walking']), ('GeorgiaTech', ['University', 'Walking']), ('GeorgiaAquarium', ['Animals', 'Education', 'Entertainment', 'Museum']), ('Zoo Atlanta', ['Animals', 'Nature', 'Fun'])]
+
+Total Time of Trip: 18.59973807810789	 Total Preference of Trip: 1.6997380781078921
+0:00:00.097243

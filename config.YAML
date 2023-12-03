@@ -1,8 +1,8 @@
 locationFile: './data/LocationsOct11.csv'
 edgeFile: './data/EdgesOct11.csv'
-prefFile: './data/pref1.csv'
+prefFile: './data/demoPref.csv'
 startLoc: 'AtlantaGA'
-resultFile: './output/RoundTripTest3.csv'
+resultFile: './output/RoundTripDemo1.csv'
 maxTime: 20
 x_mph: 60
 
@@ -12,8 +12,6 @@ themeFile: "./data/themes.tsv"
 maxSamples: 20
 
 
-path_to_data: './data/data.txt'
-path_to_output: './output/output1.csv'
 hidden_layers: [4, 4]
 num_folds: 5
 num_trials: 5
